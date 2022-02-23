@@ -14,6 +14,7 @@ int main()
 			if(s[j] != s[n-j-1]) cnt++;
 		}
 		if(cnt <= k && ((k - cnt)%2) == 0) cout << "YES" <<endl;
+		else if(cnt <=k && n%2 == 1) cout << "YES" <<endl;
 		else cout << "NO" << endl;
 	}
 }
